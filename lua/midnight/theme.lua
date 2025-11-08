@@ -14,8 +14,7 @@ local M = {}
 ---@param from string
 ---@param tos string|string[]
 local function link(from, tos)
-  ---@type string[]
-  local tos_list = type(tos) == 'string' and { tos } or tos
+  local tos_list = type(tos) == 'string' and { tos } or tos --[[@as string[] ]]
   for _, to in ipairs(tos_list) do
     vim.api.nvim_set_hl(0, to, { link = from })
   end
@@ -73,13 +72,13 @@ function M.apply()
   hi('CursorLine', { bg = cs.dark_grey }, { 'ColorColumn', 'Folded', 'Visual' })
   hi('CursorLineNr', { fg = cs.medium_emphasis })
 
-  hi('Conceal', { fg = cs.light_black, bg = cs.bg })
+  hi('Conceal', { fg = cs.light_black, bg = cs.black })
   hi('Directory', { fg = cs.white })
   hi('Error', { fg = cs.red })
   hi('ErrorMsg', { bold = true, underline = true, fg = cs.red })
   hi('MoreMsg', { fg = cs.yellow }, { 'WarningMsg' })
   hi('MatchParen', { bg = cs.med_grey })
-  hi('NormalFloat', { bg = cs.bg }, {
+  hi('NormalFloat', { bg = cs.black }, {
     'LspInfoBorder',
     'FloatBorder',
     'FloatShadow',

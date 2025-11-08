@@ -35,7 +35,7 @@ local M = {}
 ---@type Palette
 M.midnight = {
   black = '#121212',
-  red = '#f48771',
+  red = '#ff6b6b',
   green = '#98c379',
   yellow = '#e5c07b',
   blue = '#7aa2f7',
@@ -45,7 +45,7 @@ M.midnight = {
   white = '#e0e0e0',
 
   bright_black = '#666666',
-  bright_red = '#ff6b6b',
+  bright_red = '#f48771',
   bright_green = '#b5e890',
   bright_yellow = '#f0d197',
   bright_blue = '#9db8f7',

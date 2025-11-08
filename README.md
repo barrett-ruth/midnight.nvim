@@ -12,6 +12,7 @@ neovim theme for code, not colors.
   end,
 }
 ```
+
 ## Plugin Integration
 
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

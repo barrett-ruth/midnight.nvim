@@ -96,11 +96,7 @@ function M.apply()
   tshi('Keyword', { fg = cs.blue }, { 'Statement' })
   tshi('Namespace', { fg = cs.white })
   tshi('Number', { fg = cs.green })
-  tshi(
-    'Operator',
-    { fg = cs.white },
-    { '@keyword.operator', '@conditional.ternary' }
-  )
+  tshi('Operator', { fg = cs.white }, { '@keyword.operator', '@conditional.ternary' })
   hi('Delimiter', { none = true })
   hi('@punctuation.delimiter', { fg = cs.white })
   tshi('PreProc', { fg = cs.blue })
@@ -135,31 +131,11 @@ function M.apply()
 
   hi('LspInlayHint', { fg = cs.light_black })
   hi('LspSignatureActiveParameter', { underline = true, italic = true })
-  hi(
-    'DiagnosticError',
-    { fg = cs.red },
-    { 'DiagnosticFloatingError', 'DiagnosticSignError' }
-  )
-  hi(
-    'DiagnosticWarn',
-    { fg = cs.yellow },
-    { 'DiagnosticFloatingWarn', 'DiagnosticSignWarn' }
-  )
-  hi(
-    'DiagnosticHint',
-    { fg = cs.white },
-    { 'DiagnosticFloatingHint', 'DiagnosticSignHint' }
-  )
-  hi(
-    'DiagnosticOk',
-    { fg = cs.green },
-    { 'DiagnosticFloatingOk', 'DiagnosticSignOk' }
-  )
-  hi(
-    'DiagnosticInfo',
-    { fg = cs.white },
-    { 'DiagnosticFloatingInfo', 'DiagnosticSignInfo' }
-  )
+  hi('DiagnosticError', { fg = cs.red }, { 'DiagnosticFloatingError', 'DiagnosticSignError' })
+  hi('DiagnosticWarn', { fg = cs.yellow }, { 'DiagnosticFloatingWarn', 'DiagnosticSignWarn' })
+  hi('DiagnosticHint', { fg = cs.white }, { 'DiagnosticFloatingHint', 'DiagnosticSignHint' })
+  hi('DiagnosticOk', { fg = cs.green }, { 'DiagnosticFloatingOk', 'DiagnosticSignOk' })
+  hi('DiagnosticInfo', { fg = cs.white }, { 'DiagnosticFloatingInfo', 'DiagnosticSignInfo' })
   hi('DiagnosticUnderlineError', { undercurl = true, special = cs.red })
   hi('DiagnosticUnderlineWarn', { undercurl = true, special = cs.yellow })
   hi('DiagnosticUnderlineHint', { undercurl = true, special = cs.white })

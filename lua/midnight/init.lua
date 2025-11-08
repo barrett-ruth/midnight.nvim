@@ -1,10 +1,15 @@
 local M = {}
 
----@param opts? table
+---@class MidnightConfig
+---@field [string] any
+
+---@param opts? MidnightConfig
+---@return nil
 function M.setup(opts)
   opts = opts or {}
 end
 
+---@return nil
 function M.load()
   if vim.g.colors_name then
     vim.cmd('hi clear')

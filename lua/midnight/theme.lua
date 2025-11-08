@@ -14,8 +14,9 @@ local M = {}
 ---@param from string
 ---@param tos string|string[]
 local function link(from, tos)
-  tos = type(tos) == 'string' and { tos } or tos
-  for _, to in ipairs(tos) do
+  ---@type string[]
+  local tos_list = type(tos) == 'string' and { tos } or tos
+  for _, to in ipairs(tos_list) do
     vim.api.nvim_set_hl(0, to, { link = from })
   end
 end

@@ -1,0 +1,90 @@
+*midnight.nvim.txt*        Neovim theme for code, not colors
+
+Author:  Barrett Ruth <br.barrettruth@gmail.com>
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+INTRODUCTION                                                   *midnight.nvim*
+
+midnight.nvim is a minimalist colorscheme with two variants:
+
+    midnight    Dark theme
+    daylight    Light theme
+
+==============================================================================
+INSTALLATION                                           *midnight-installation*
+
+>lua
+    {
+      'barrett-ruth/midnight.nvim',
+      config = function()
+        vim.cmd.colorscheme('midnight')
+      end,
+    }
+<
+
+==============================================================================
+COLORSCHEMES                                           *midnight-colorschemes*
+
+:colorscheme midnight                                   *midnight* *:midnight*
+:colorscheme daylight                                   *daylight* *:daylight*
+
+==============================================================================
+PLUGIN INTEGRATION                                     *midnight-integration*
+
+Built-in support for:
+    • nvim-treesitter
+    • nvim-cmp
+    • blink.cmp
+    • fzf-lua
+    • gitsigns.nvim
+
+==============================================================================
+TERMINAL COLORS                                    *midnight-terminal-colors*
+
+midnight.nvim configures all 16 terminal colors via vim.g.terminal_color_*
+variables. These colors are used for:
+
+    • Built-in |:terminal| emulator
+    • Terminal UI elements
+    • ANSI color sequences in terminal buffers
+
+Palette (midnight) ~
+
+    Color 0  (black):          #121212
+    Color 1  (red):            #ff6b6b
+    Color 2  (green):          #98c379
+    Color 3  (yellow):         #e5c07b
+    Color 4  (blue):           #7aa2f7
+    Color 5  (magenta):        #c678dd
+    Color 6  (cyan):           #56b6c2
+    Color 7  (white):          #e0e0e0
+    Color 8  (bright black):   #666666
+    Color 9  (bright red):     #f48771
+    Color 10 (bright green):   #b5e890
+    Color 11 (bright yellow):  #f0d197
+    Color 12 (bright blue):    #9db8f7
+    Color 13 (bright magenta): #e298ff
+    Color 14 (bright cyan):    #7dd6e0
+    Color 15 (bright white):   #ffffff
+
+Palette (daylight) ~
+
+    Color 0  (black):          #f5f5f5
+    Color 1  (red):            #c7254e
+    Color 2  (green):          #2d7f3e
+    Color 3  (yellow):         #996800
+    Color 4  (blue):           #3b5bdb
+    Color 5  (magenta):        #ae3ec9
+    Color 6  (cyan):           #1098ad
+    Color 7  (white):          #1a1a1a
+    Color 8  (bright black):   #999999
+    Color 9  (bright red):     #e03e52
+    Color 10 (bright green):   #37b24d
+    Color 11 (bright yellow):  #f59f00
+    Color 12 (bright blue):    #4c6ef5
+    Color 13 (bright magenta): #da77f2
+    Color 14 (bright cyan):    #15aabf
+    Color 15 (bright white):   #000000
+
+ vim:tw=78:ts=8:ft=help:norl:

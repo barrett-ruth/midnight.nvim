@@ -6,6 +6,9 @@ neovim theme for code, not colors.
 
 ## Installation
 
+Install with any package manager of your choice. For example, with
+[lazy.nvim](https://github.com/folke/lazy.nvim):
+
 ```lua
 {
   'barrett-ruth/midnight.nvim',
